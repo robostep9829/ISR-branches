@@ -15,5 +15,22 @@ class Main {
                 System.out.println(baz);
             }
         }
+        System.out.println("Dev branch");
+
+        int counter = 0;
+        while (true) {
+            counter++;
+
+            if (counter % 2 == 0) {
+                System.out.println(counter);
+            }
+            try {
+                Scanner scanner = new Scanner(System.in);
+                scanner.nextLine();
+                break;
+            } catch (Exception e) {
+
+            }
+        }
     }
 }
